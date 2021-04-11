@@ -1,17 +1,20 @@
-# Template Python on Docker
+# Call WebAPI in Python
 
-## 使い方
+PythonでWebAPIを叩いて、JSONを取得する。
 
-1. Dockerfileのimageを変更する。
-2. 必要に応じてDockerfileにpipを書く。
-3. 必要に応じてdocker-compose.ymlを修正する。
-4. 下記実行。
-    ``` sh
-    docker-compose build
-    docker-compose up
-    ```
+## API
+
+``` sh
+http://zipcloud.ibsnet.co.jp/api/search?zipcode=2500011
+```
+
+## 実行
+
+``` sh
+docker-compose up
+```
 
 ## 参考
 
-- [Qiita:Docker を使う（python のイメージで色々確認してみる）](https://qiita.com/landwarrior/items/fd918da9ebae20486b81)
-- [Future Tech Blog:仕事でPythonコンテナをデプロイする人向けのDockerfile (1): オールマイティ編](https://future-architect.github.io/articles/20200513/)
+- [PythonでWeb APIを叩く:Qiita](https://qiita.com/hisshi00/items/9806eceeee2237624222)
+- [Python:webAPIからJSONデータの読み込み:Qiita](https://qiita.com/tamago324/items/3b189a87342ae6120b1c)
